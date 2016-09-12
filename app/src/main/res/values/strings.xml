@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Crazy Awesome Number Converter</string>
+    <string name="convert_message">Enter a number to convert</string>
+    <string name="input_edittext">input</string>
+    <string name="convert_button">convert</string>
+
+
+    <string-array name="bases_array">
+        <item>2</item>
+        <item>8</item>
+        <item>10</item>
+        <item>16</item>
+    </string-array>
+</resources>

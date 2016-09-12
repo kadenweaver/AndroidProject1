@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padd"
+    tools:context="com.example.kpweav13.androidproject1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint = "@string/convert_message"
+            android:id = "@+id/input_edit"
+            android:layout_weight=".70"
+            android:inputType="number"
+            android:textSize="@dimen/numsize"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id = "@+id/inputspinner"
+            android:entries = "@array/bases_array"
+            android:layout_weight=".30"
+            android:textSize="@dimen/numsize"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/output"
+            android:layout_weight=".70"
+            android:textSize="@dimen/numsize"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries = "@array/bases_array"
+            android:id = "@+id/outputspinner"
+            android:layout_weight=".072"
+            android:textSize="@dimen/numsize"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/convert_button"
+        android:text= "@string/convert_button"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
